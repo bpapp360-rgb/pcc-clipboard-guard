@@ -1,0 +1,2 @@
+# Treat the packaged extension as a binary — prevents git from mangling line endings
+extension.crx binary
