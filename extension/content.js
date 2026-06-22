@@ -14,7 +14,7 @@
 
   // Block Ctrl/Cmd + C (copy), X (cut), V (paste), A (select all).
   document.addEventListener('keydown', function (e) {
-    if ((e.ctrlKey || e.metaKey) && ['c', 'x', 'v', 'a'].includes(e.key.toLowerCase())) {
+    if ((e.ctrlKey || e.metaKey) && ['KeyC', 'KeyX', 'KeyV', 'KeyA'].includes(e.code)) {
       e.preventDefault();
       e.stopImmediatePropagation();
     }
