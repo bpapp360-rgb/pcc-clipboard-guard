@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "PCC Clipboard Guard",
+  "version": "1.0.0",
+  "description": "Blocks clipboard operations on PointClickCare.com for data security and badge scan compliance.",
+  "update_url": "https://bpapp360-rgb.github.io/pcc-clipboard-guard/update.xml",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwsl4pVVXQSQVPk5RKZwo0q/u8GUT3Giq+R5Vhm6UxkfMZlT1P+euhwYhQ/SWJGjAoIP7z6sfEg6AOMROlh3PRR03lmbKalP1u6yMA5efvn3y91y+WB2tTq/WOXIhKUHXHP8abeaLGpRzFG4iQsKpCvV+eqPQKxXrG5O/EGF4CrZlwWuNv26Yx8y2Oe07LhS/vqBhcdJHZH7rr/8vu6s2/N1fjDB4rb0O+v5pi/JwS+rmAx8dpmeZUShw+C7jYMFlCgBOx0aPHJ74TGwDBvH/LqXoKOE2Gmwfo2VkvxQXJpN/Q4nTkVVeS7EyH24w5UurwKvc6zocyb1CGbDxcI5sawIDAQAB",
+  "content_scripts": [
+    {
+      "matches": ["*://*.pointclickcare.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
