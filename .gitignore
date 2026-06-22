@@ -1,3 +1,7 @@
 # Private signing key — NEVER commit this. Loss means redeploying as a new extension.
 extension.pem
 *.pem
+
+# Intermediate build artifacts from key generation script
+extension-id.txt
+extension-key.txt
